@@ -1,0 +1,5 @@
+read_verilog rtl/hardwareblink.v
+
+synth_ice40 -noflatten -blif build/hardwareblink.blif
+
+write_json build/hardwareblink.json    
